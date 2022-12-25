@@ -1,0 +1,128 @@
+{
+    "MainSettings":
+    {
+        "title": "GUI Spammer",
+        "width": 530,
+        "height": 440
+    },
+    "Elements":
+    {
+        "text_words":
+        {
+            "type": "Text",
+            "param":
+            {
+                "width": 60,
+                "height": 15
+            },
+            "place":
+            {
+                "row": 0,
+                "column": 0,
+                "columnspan": 2
+            }
+        },
+
+        "label_tbm":
+        {
+            "type": "Label",
+            "param":
+            {
+                "text": "Time between message (sec)"
+            },
+            "place":
+            {
+                "row": 1,
+                "column": 0
+            }
+        },
+
+        "entry_tbm":
+        {
+            "type": "Entry",
+            "param":
+            {
+                "width": 24
+            },
+            "place":
+            {
+                "row": 2,
+                "column": 0
+            }
+        },
+
+        "label_tufm":
+        {
+            "type": "Label",
+            "param":
+            {
+                "text": "Time until first message (sec)"
+            },
+            "place":
+            {
+                "row": 1,
+                "column": 1
+            }
+        },
+
+        "entry_tufm":
+        {
+            "type": "Entry",
+            "param":
+            {
+                "width": 24
+            },
+            "place":
+            {
+                "row": 2,
+                "column": 1
+            }
+        },
+
+        "label_itercnt":
+        {
+            "type": "Label",
+            "param":
+            {
+                "text": "Count of iterations"
+            },
+            "place":
+            {
+                "row": 3,
+                "column": 0
+            }
+        },
+
+        "entry_itercnt":
+        {
+            "type": "Entry",
+            "param":
+            {
+                "width": 24
+            },
+            "place":
+            {
+                "row": 4,
+                "column": 0
+            }
+        },
+
+        "button_start":
+        {
+            "type": "Button",
+            "param":
+            {
+                "text": "Start!",
+                "width": 20,
+                "command": "handle_start_button"
+            },
+            "place":
+            {
+                "row": 5,
+                "column": 0,
+                "pady": 5,
+                "columnspan": 2
+            }
+        }
+    }
+}
