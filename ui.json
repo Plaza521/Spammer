@@ -120,7 +120,7 @@
             {
                 "row": 5,
                 "column": 0,
-                "pady": 5,
+                "pady": 7,
                 "columnspan": 2
             }
         }
