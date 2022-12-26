@@ -8,6 +8,7 @@ class Graphic:
     def __init__(self, window):
         with open("ui.json") as f:
             self.elements_data = json.load(f)['Elements']
+
         for element in self.elements_data:
             self.elements_data[element]['type'] = \
                 getattr(tk, self.elements_data[element]['type'])
@@ -21,7 +22,7 @@ class Graphic:
 
         self.element_handlers = {}
 
-    def draw(self, frame: tk.Frame):
+    def draw(self, frame: tk.Frame) -> None:
         esd = self.elements_data
         for element in esd:
             esd_elem = esd[element]

@@ -1,12 +1,20 @@
+from gui import Graphic
+import schemas
 import json
 import tkinter as tk
-from gui import Graphic
+import jsonschema
 
 
 class Window:
     def __init__(self):
         with open("ui.json") as f:
+            jsonschema.validate(
+                instance=json.load(f),
+                schema=schemas.ui_schema
+            )
+        with open("ui.json") as f:
             self.settings = json.load(f)['MainSettings']
+
         self.win = tk.Tk()
         self.win.geometry(
             f"{self.settings['width']}x{self.settings['height']}"
